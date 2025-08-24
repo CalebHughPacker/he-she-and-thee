@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>He, She, and Thee</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+<button class="icon-btn" aria-label="Open menu">&#9776;</button>
+<a class="brand" href="/">He, She, and Thee</a>
+<a class="icon-btn cart" href="cart.html" aria-label="Cart">
+🛒<span id="cart-count" class="badge" aria-hidden="true">0</span>
+</a>
+</header>
+
+
+<main>
+
+<section class="hero">
+<div class="img-skeleton" role="img" aria-label="Hero image placeholder"><img src="img/hero.jpg" alt="hero image" style="height: auto; width: 100%;"></div>
+</section>
+
+
+
+<h2 class="page-title">He, She, and Thee</h2>
+
+
+
+<section id="products" class="products" aria-label="Featured products"></section>
+
+
+
+  <article id="sunup" class="sunup" aria-live="polite">
+      <h3 class="sunup-title">SUN UP Daily Inspiration</h3>
+      <!-- Images of first pages will be injected here -->
+    </article>
+
+
+<section id="more-products" class="products" aria-label="More products"></section>
+</main>
+
+<script>
+  window.SUNUP_PDFS = [
+    "sunups/blue3 (2014_11_14 21_53_21 UTC).pdf"
+  ];
+</script>
+
+
+
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>
