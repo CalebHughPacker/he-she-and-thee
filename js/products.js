@@ -7,12 +7,12 @@ this.id = id; this.title = title; this.price = price; this.description = descrip
 
 export class ProductStore {
 static #catalog = [
-new Product({ id: "p1", title: "Lorem Mug", price: 14.99, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }),
-new Product({ id: "p2", title: "Ipsum Tee", price: 24.00, description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-new Product({ id: "p3", title: "Dolor Journal", price: 18.50, description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." }),
-new Product({ id: "p4", title: "Sit Kit", price: 39.00, description: "Nisi ut aliquip ex ea commodo consequat." }),
-new Product({ id: "p5", title: "Amet Tote", price: 22.00, description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum." }),
-new Product({ id: "p6", title: "Consectetur Sampler", price: 29.00, description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa." }),
+new Product({ id: "p1", title: "Loremsum", price: 14.99, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }),
+new Product({ id: "p2", title: "Ipsumlore", price: 24.00, description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem." }),
+new Product({ id: "p3", title: "Dolorsit", price: 18.50, description: "At vero eos et accusamus et iusto odio dignissimos ducimus." }),
+new Product({ id: "p4", title: "Sitdolor", price: 39.00, description: "Et harum quidem rerum facilis est et expedita distinctio." }),
+new Product({ id: "p5", title: "Ametlore", price: 22.00, description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque." }),
+new Product({ id: "p6", title: "Consectu", price: 29.00, description: "Temporibus autem quibusdam et aut officiis debitis aut rerum." })
 
 ];
 
@@ -30,7 +30,6 @@ return arr.slice(0, n);
 export const money = (n) => `$${n.toFixed(2)}`;
 
 
-// Lightweight LocalStorage cart helpers
 const KEY = "hst_cart";
 export function readCart(){
 try { return JSON.parse(localStorage.getItem(KEY)) || { items: [] }; }

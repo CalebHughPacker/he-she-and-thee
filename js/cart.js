@@ -3,7 +3,7 @@ import {
   ProductStore,
   money,
   readCart,
-  writeCart,   // (not used directly, but kept for parity)
+  writeCart,
   setQty,
   removeItem,
   countItems
@@ -70,7 +70,7 @@ function render() {
       </div>
     `;
 
-    // Quantity handlers
+
     card.querySelector('.dec').addEventListener('click', () => {
       setQty(p.id, Math.max(1, qty - 1));
       render();
@@ -80,7 +80,7 @@ function render() {
       render();
     });
 
-    // Remove line
+
     card.querySelector('[data-remove]').addEventListener('click', () => {
       removeItem(p.id);
       render();
@@ -97,10 +97,10 @@ function render() {
   updateBadge();
 }
 
-// Initial render
+
 render();
 
-// Demo checkout
+
 document.getElementById('checkout').addEventListener('click', () => {
   alert('Proceeding to checkout (demo).');
 });

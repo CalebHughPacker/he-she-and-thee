@@ -14,7 +14,6 @@ async function renderPDFAsImage(url, container) {
     const pdf = await pdfjsLib.getDocument(url).promise;
     const page = await pdf.getPage(1);
 
-    // Fit to container width
     const containerWidth = container.clientWidth || 600;
     const viewport = page.getViewport({ scale: 1 });
     const scale = containerWidth / viewport.width;
